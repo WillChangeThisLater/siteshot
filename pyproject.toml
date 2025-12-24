@@ -1,0 +1,20 @@
+[project]
+name = "siteshot"
+version = "0.1"
+description = "LLM plugin for screenshotting a site"
+readme = "README.md"
+authors = [{name = "Paul Wendt"}]
+license = "Apache-2.0"
+classifiers = []
+requires-python = ">=3.9"
+dependencies = [
+    "llm>=0.25",
+    "playwright>=1.44",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.entry-points.llm]
+siteshot = "siteshot"
